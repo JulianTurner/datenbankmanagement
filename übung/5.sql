@@ -1,3 +1,3 @@
-select COUNT(p.Matrnr) as anzahl, v.vorlnr, v.titel
-from pruefen p right join vorlesungen v on p.vorlnr = v.vorlnr
-group by v.vorlnr, v.titel
+SELECT COUNT(p.Matrnr) AS anzahl, v.vorlnr, v.titel
+FROM pruefen p RIGHT JOIN vorlesungen v ON p.vorlnr = v.vorlnr
+GROUP BY v.vorlnr, v.titel
